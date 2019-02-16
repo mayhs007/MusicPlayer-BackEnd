@@ -14,7 +14,7 @@ router.get('/getFiles', (req, res) => {
     //console.log(dirTree);
     const path2 = "./music.json";
     if (fs.existsSync(path2)) {
-        console.log("Working");
+        //console.log("Working");
         var contents = fs.readFileSync('music.json', 'utf8');
         res.send(contents);
     } else {
